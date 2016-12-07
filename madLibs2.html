@@ -1,12 +1,47 @@
 <!DOCTYPE html>
+<!-- Jeff Vercruyssen -->
 <html>
   <head>
     <meta charset="utf-8" />
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="madLibs1.css" />
     <title>Mad Libs</title>
     <script type="text/javascript" src="madLibs.js"></script>
   </head>
-  <body lang="en-US" onload="getVariables()">
-    Once there was a <id="noun1"> named Jeremy.
+  <body lang="en-US">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4" id=story class="hidden-message">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="input-group">
+            <input type="text" id="noun1" class="form-control" placeholder="Noun">
+            <input type="text" id="noun2" class="form-control" placeholder="Noun">
+            <input type="text" id="verb1" class="form-control" placeholder="Verb -ing form">
+            <input type="text" id="verb2" class="form-control" placeholder="Verb -ing form">
+            <input type="text" id="adj1" class="form-control" placeholder="Adjective">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="button" id="submitBtn" onclick="submit2();">
+              <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+              Submit
+                <span id=inputError class="hidden-message"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="index.html">Mad Lib 1</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
