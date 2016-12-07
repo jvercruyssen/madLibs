@@ -22,6 +22,7 @@ function submit(){
 }
 
 function getVariables(){
+    var noun1 = getCookie("n1").value;
     document.getElementById("noun1").value = getCookie("n1");
 }
 
