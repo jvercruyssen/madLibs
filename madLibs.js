@@ -19,14 +19,19 @@ function submit(){
         document.getElementById("inputError").classList.add("shown-message");
     }
     else{
-        m1 = input1;
-        m2 = input2;
-        m3 = input3;
-        m4 = input4;
-        m5 = input5;
-        document.getElementById("story").innerHTML="There once was a " + m1 + " named Jeremy. He was best friends with a " + m2 + " named Jessica. Jeremy loved " + m3 + " while Jessica loved " + m4 + ". One day Jeremy attempted " + m4 + " with Jessica, but was unable to keep up due to his " + m5 + " " + m1 + " legs. Jessica attempted to convice Jeremy that it was okay that he was not good at " + m4 + " as she was not very good at " + m3 + " herself.";
-        document.getElementById("story").classList.remove("hidden-message");
-        document.getElementById("story").classList.add("shown-message");
+        setCookie("m1", input1, 1);
+        setCookie("m2", input2, 1);
+        setCookie("m3", input3, 1);
+        setCookie("m4", input4, 1);
+        setCookie("m5", input5, 1);
+        console.log(getCookie("m1"));
+        console.log(getCookie("m2"));
+        console.log(getCookie("m3"));
+        console.log(getCookie("m4"));
+        console.log(getCookie("m5"));
+        //document.getElementById("story").innerHTML="There once was a " + m1 + " named Jeremy. He was best friends with a " + m2 + " named Jessica. Jeremy loved " + m3 + " while Jessica loved " + m4 + ". One day Jeremy attempted " + m4 + " with Jessica, but was unable to keep up due to his " + m5 + " " + m1 + " legs. Jessica attempted to convice Jeremy that it was okay that he was not good at " + m4 + " as she was not very good at " + m3 + " herself.";
+        //document.getElementById("story").classList.remove("hidden-message");
+        //document.getElementById("story").classList.add("shown-message");
     }
 }
 
@@ -52,4 +57,27 @@ function submit2(){
         document.getElementById("story").classList.remove("hidden-message");
         document.getElementById("story").classList.add("shown-message");
     }
+}
+
+//courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+//courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
