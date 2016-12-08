@@ -35,7 +35,18 @@ function submit(){
     }
 }
 
-function submit2(){
+function loadVariables(){
+      m1 = getCookie("m1");
+      m2 = getCookie("m2");
+      m3 = getCookie("m3");
+      m4 = getCookie("m4");
+      m5 = getCookie("m5");
+      document.getElementById("story").innerHTML="There once was a " + m1 + " named Jeremy. He was best friends with a " + m2 + " named Jessica. Jeremy loved " + m3 + " while Jessica loved " + m4 + ". One day Jeremy attempted " + m4 + " with Jessica, but was unable to keep up due to his " + m5 + " " + m1 + " legs. Jessica attempted to convice Jeremy that it was okay that he was not good at " + m4 + " as she was not very good at " + m3 + " herself.";
+      document.getElementById("story").innerHTML="You have a pet " + m1 + ". Your pet " + m1 + " likes " + m3 + " " + m2 +"s. You try " + m4 + " your " + m1 + " to stop it from " + m3 + " " + m2 + "s. The " + m2 + " ends up saving itself from your " + m1 + "'s " + m3 + " by using its " + m5 + " legs to escape.";
+
+}
+
+/*function submit2(){
     //same as submit but contains story for second mad lib
     var input1 = document.getElementById("noun1").value;
     var input2 = document.getElementById("noun2").value;
@@ -57,7 +68,7 @@ function submit2(){
         document.getElementById("story").classList.remove("hidden-message");
         document.getElementById("story").classList.add("shown-message");
     }
-}
+}*/
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
