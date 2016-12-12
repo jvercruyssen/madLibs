@@ -28,12 +28,7 @@
       <div class="row">
         <div class="col-sm-4" id=variables>
           <script>
-            var disp = [];
-            var disp[0] = getCookie("m1");
-            var disp[1] = getCookie("m2");
-            var disp[2] = getCookie("m3");
-            var disp[3] = getCookie("m4");
-            var disp[4] = getCookie("m5");
+            var disp = [getCookie("m1"),getCookie("m2"),getCookie("m3"),getCookie("m4"),getCookie("m5")];
             document.getElementById("variables").innerHTML =
             "Variables Used:" + "<br>" +
             "Variable 1: " + disp[0] + "<br>" +
