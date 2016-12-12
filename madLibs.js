@@ -39,29 +39,17 @@ function loadVariables(){
       m4 = getCookie("m4");
       m5 = getCookie("m5");
       document.getElementById("story").innerHTML="There once was a " +
-      <span style="color:red">m1</span> +
-      " named Jeremy. He was best friends with a " +
-      <span style="color:green">m2</span> + " named Jessica. Jeremy loved " +
-      <span style="color:blue">m3</span> + " while Jessica loved " +
-      <span style="color:purple">m4</span> + ". One day Jeremy attempted " +
-      <span style="color:purple">m4</span> +
-      " with Jessica, but was unable to keep up due to his " +
-      <span style="color:orange">m5</span> + " " +
-      <span style="color:red">m1</span> +
+      m1 + " named Jeremy. He was best friends with a " + m2 +
+      " named Jessica. Jeremy loved " + m3 + " while Jessica loved " + m4 +
+      ". One day Jeremy attempted " + m4 +
+      " with Jessica, but was unable to keep up due to his " + m5 + " " + m1 +
       " legs. Jessica attempted to convice Jeremy that it was okay that he was not good at " +
-      <span style="color:purple">m4</span> + " as she was not very good at " +
-      <span style="color:blue">m3</span> + " herself.";
-      document.getElementById("story2").innerHTML="You have a pet " +
-      <span style="color:red">m1</span> + ". Your pet " +
-      <span style="color:red">m1</span> + " likes " +
-      <span style="color:blue">m3</span> + " " + <span style="color:green">m2</span> +
-      "s. You try " + <span style="color:purple">m4</span> + " your " +
-      <span style="color:red">m1</span> + " to stop it from " +
-      <span style="color:blue">m3</span> + " " + <span style="color:green">m2</span> +
-      "s. The " + <span style="color:green">m2</span> +
-      " ends up saving itself from your " + <span style="color:red">m1</span> +
-      "'s " + <span style="color:blue">m3</span> + " by using its " +
-      <span style="color:orange">m5</span> + " legs to escape.";
+      m4 + " as she was not very good at " + m3 + " herself.";
+      document.getElementById("story2").innerHTML="You have a pet " + m1 +
+      ". Your pet " + m1 + " likes " + m3 + " " + m2 +"s. You try " + m4 +
+      " your " + m1 + " to stop it from " + m3 + " " + m2 + "s. The " + m2 +
+      " ends up saving itself from your " + m1 + "'s " + m3 + " by using its " +
+      m5 + " legs to escape.";
 
 }
 
