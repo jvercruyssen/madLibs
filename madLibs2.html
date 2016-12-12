@@ -27,6 +27,24 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
+          <script>
+            var n1 = getCookie("m1");
+            var n2 = getCookie("m2");
+            var n3 = getCookie("m3");
+            var n4 = getCookie("m4");
+            var n5 = getCookie("m5");
+            var variables = '{"m1":n1,"m2":n2,"m3":n3,"m4":n4,"m5":n5}';
+            var disp = JSON.parse(variables);
+            "Variable 1: " + disp.m1 + "<br>" +
+            "Variable 2: " + disp.m2 + "<br>" +
+            "Variable 3: " + disp.m3 + "<br>" +
+            "Variable 4: " + disp.m4 + "<br>" +
+            "Variable 5: " + disp.m5;
+          </script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
           <a href="index.html">Back to variable loading page.</a>
         </div>
       </div>
