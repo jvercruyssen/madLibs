@@ -33,15 +33,15 @@
             var n3 = getCookie("m3");
             var n4 = getCookie("m4");
             var n5 = getCookie("m5");
-            var variables = {"m1":n1, "m2":n2, "m3":n3, "m4":n4, "m5":n5};
+            var variables = {n1, n2, n3, n4, n5};
             var disp = JSON.parse(variables);
             document.getElementById("variables").innerHTML =
             "Variables Used:" + "<br>" +
-            "Variable 1: " + disp.m1 + "<br>" +
-            "Variable 2: " + disp.m2 + "<br>" +
-            "Variable 3: " + disp.m3 + "<br>" +
-            "Variable 4: " + disp.m4 + "<br>" +
-            "Variable 5: " + disp.m5;
+            "Variable 1: " + disp.n1 + "<br>" +
+            "Variable 2: " + disp.n2 + "<br>" +
+            "Variable 3: " + disp.n3 + "<br>" +
+            "Variable 4: " + disp.n4 + "<br>" +
+            "Variable 5: " + disp.n5;
           </script>
         </div>
       </div>
